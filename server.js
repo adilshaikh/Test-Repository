@@ -56,6 +56,12 @@ app.get('/about', (req,res)=>{
         
     })
 })
+
+app.get('/projects', (req, res)=>{
+    res.render('projects.hbs',{
+        pageTitle: 'Hey i m in Projects Route.'
+    })
+})
 app.get('/bad', (req, res)=>{
     res.send({
         errorMessage: 'Bad Request' 
